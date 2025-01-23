@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
         Vector2 runVelocity = new Vector2(hMovement * runSpeed, playerCharacter.velocity.y);
         playerCharacter.velocity = runVelocity;
 
+        print(runVelocity);
+
         // playerAnimator.SetBool("run", true);
 
         bool hSpeed = Mathf.Abs(playerCharacter.velocity.x) > Mathf.Epsilon;
