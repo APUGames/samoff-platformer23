@@ -73,12 +73,12 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            // Get new Y velocity based on a controller variable
-            Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
-            playerCharacter.velocity += jumpVelocity;
-        }
+            if (Input.GetButtonDown("Jump"))
+            {
+                // Get new Y velocity based on a controller variable
+                Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
+                playerCharacter.velocity += jumpVelocity;
+            }
     }
 
     private void Climb()
