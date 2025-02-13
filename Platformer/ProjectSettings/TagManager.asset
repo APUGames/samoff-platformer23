@@ -11,13 +11,13 @@ TagManager:
   - 
   - Water
   - UI
+  - Background
   - Ground
   - Player
   - Climbing
-  - Background
-  - 
-  - 
-  - 
+  - Enemy
+  - Hazards
+  - Pickups
   - 
   - 
   - 
@@ -42,17 +42,29 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 3951743619
+    uniqueID: 3731430837
     locked: 0
-  - name: Foreground
-    uniqueID: 3094534813
+  - name: Stuff BG
+    uniqueID: 1441641313
+    locked: 0
+  - name: Ground
+    uniqueID: 795172735
+    locked: 0
+  - name: Enemy
+    uniqueID: 1072277881
     locked: 0
   - name: Climbing
-    uniqueID: 3185140507
+    uniqueID: 408500471
+    locked: 0
+  - name: Pickups
+    uniqueID: 1076915719
     locked: 0
   - name: Player
-    uniqueID: 2792440173
+    uniqueID: 1236677397
     locked: 0
-  - name: InFront
-    uniqueID: 3110027465
+  - name: Stuff FG
+    uniqueID: 3798086249
+    locked: 0
+  - name: Hazards
+    uniqueID: 2693007569
     locked: 0
