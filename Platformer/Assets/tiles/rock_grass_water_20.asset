@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: rock_grass_water_20
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -2070385115, guid: b427774a270d0fe41abd09e06ca3326a, type: 3}
+  m_Sprite: {fileID: -1375355433, guid: e2f3f7da0f5f43d4eb01413c14ccbb92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
