@@ -134,6 +134,8 @@ public class Player : MonoBehaviour
             isAlive = false;
             playerAnimator.SetTrigger("die"); // Not yet created
             playerCharacter.velocity = deathSeq;
+
+            FindAnyObjectByType<GameSession>().ProcessPlayerDeath();
         }
     }
 }
