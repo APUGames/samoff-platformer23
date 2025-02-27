@@ -3,7 +3,7 @@ guid: 122c2f494e62f1e408acafd9b6c9f5d3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -94,7 +107,46 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -124,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02b93b942e28e7543a8ae8cc51a68044
-      internalID: -494047184
+      spriteID: 3b986b7a24fba1343ac304ef1b66bdbb
+      internalID: -2113080069
       vertices: []
       indices: 
       edges: []
@@ -145,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e7833ca9aaf6143bc81921d5b57163
-      internalID: -2104324289
+      spriteID: fff5db1f60722634fb3a6baae31ee19d
+      internalID: -1983052472
       vertices: []
       indices: 
       edges: []
@@ -166,8 +218,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d1c4d5ce43405418e87335ef55445c
-      internalID: -1477551437
+      spriteID: b258f7873d90d30469f6b1eaaf8e49e2
+      internalID: -614042648
       vertices: []
       indices: 
       edges: []
@@ -187,8 +239,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc83bcad93894aa4f9f72672c9c05892
-      internalID: 816576442
+      spriteID: dbf0ad0c457d6b346a42d6f484563832
+      internalID: -1409215925
       vertices: []
       indices: 
       edges: []
@@ -208,8 +260,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd2ece25da647d74c8f345494b3ed2bd
-      internalID: 1439236537
+      spriteID: b8e0d078dc996a04396b14a127e812a2
+      internalID: 1452731847
       vertices: []
       indices: 
       edges: []
@@ -229,8 +281,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96502f74f319fc846aa70f829f2cbf91
-      internalID: 1094131085
+      spriteID: 1c5ee350a5b167a49bc58219fd38dff2
+      internalID: -1430010315
       vertices: []
       indices: 
       edges: []
@@ -250,8 +302,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3b50a4b5928a349b2497666c4447f0
-      internalID: -1297677510
+      spriteID: 9e3130c295d770544b82e7ef3d6c3f40
+      internalID: -496516133
       vertices: []
       indices: 
       edges: []
@@ -271,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9376e7ab663b24d449ccbd84e827582e
-      internalID: 1756784025
+      spriteID: 4cc51036439f52b4cb12a89664547b1e
+      internalID: -649404662
       vertices: []
       indices: 
       edges: []
@@ -292,8 +344,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ce78adf81b9d734da199feec5466b52
-      internalID: -1617668920
+      spriteID: 02f4b95e7e8168a43b8902d2c8474dc3
+      internalID: -156272124
       vertices: []
       indices: 
       edges: []
@@ -313,8 +365,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 146c61187eec6474cb121c2388e692c0
-      internalID: -1650942066
+      spriteID: b1426ab4d7ded9a4e960b10b2f964622
+      internalID: -2042327386
       vertices: []
       indices: 
       edges: []
@@ -334,8 +386,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b92fd1fb5fdc6546a15aa7994552b2c
-      internalID: -1480097207
+      spriteID: 3e9cfb2cf89ebd340b548a17512ba6f0
+      internalID: -831744659
       vertices: []
       indices: 
       edges: []
@@ -355,8 +407,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d76fd9f1db720940aebdb8914aba61d
-      internalID: 1969080277
+      spriteID: ad559073ae753a144b676b8a4b2d9217
+      internalID: 1997667464
       vertices: []
       indices: 
       edges: []
@@ -372,18 +424,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      coin_01_0: -494047184
-      coin_01_1: -2104324289
-      coin_01_10: -1480097207
-      coin_01_11: 1969080277
-      coin_01_2: -1477551437
-      coin_01_3: 816576442
-      coin_01_4: 1439236537
-      coin_01_5: 1094131085
-      coin_01_6: -1297677510
-      coin_01_7: 1756784025
-      coin_01_8: -1617668920
-      coin_01_9: -1650942066
+      coin_01_0: -2113080069
+      coin_01_1: -1983052472
+      coin_01_10: -831744659
+      coin_01_11: 1997667464
+      coin_01_2: -614042648
+      coin_01_3: -1409215925
+      coin_01_4: 1452731847
+      coin_01_5: -1430010315
+      coin_01_6: -496516133
+      coin_01_7: -649404662
+      coin_01_8: -156272124
+      coin_01_9: -2042327386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,11 +7,15 @@ public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
 
+    // Awake is the first thing that happens when the object enters the Scene
     private void Awake()
     {
+        Time.timeScale = 1.0f;
+
+        // Find the number of items of this GameObject
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
 
-        if (numGameSessions > 1)
+        if(numGameSessions > 1)
         {
             Destroy(gameObject);
         }
@@ -20,7 +24,6 @@ public class GameSession : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +51,7 @@ public class GameSession : MonoBehaviour
 
     private void ResetGameSession()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); // This can go to any Scene
 
         Destroy(gameObject);
     }
@@ -58,6 +61,7 @@ public class GameSession : MonoBehaviour
         playerLives--;
 
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
         SceneManager.LoadScene(currentSceneIndex);
     }
 

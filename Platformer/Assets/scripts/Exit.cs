@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
-    [SerializeField] float levelLoadDelay = 2.0f;
+    [SerializeField] float LevelLoadDelay = 2.0f;
     [SerializeField] float sloMoFactor = 0.2f;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,19 +15,15 @@ public class Exit : MonoBehaviour
 
     IEnumerator LoadNextLevel()
     {
-        // Do anything you want here before delay
-        Time.timeScale = sloMoFactor;
         Time.timeScale = sloMoFactor;
 
-        yield return new WaitForSecondsRealtime(levelLoadDelay);
+        yield return new WaitForSecondsRealtime(LevelLoadDelay);
 
-        // Do anything you want here after delay
         Time.timeScale = 1.0f;
-
+        
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
-
 
 }

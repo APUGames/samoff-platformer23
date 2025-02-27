@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    [Tooltip("Use these settings to adjust player run speed.")]
     [SerializeField] private float runSpeed = 5.0f;
-    [Tooltip("Use these settings to adjust player jump speed.")]
     [SerializeField] private float jumpSpeed = 5.0f;
-    [Tooltip("Use these settings to adjust player climb speed.")]
     [SerializeField] private float climbSpeed = 5.0f;
+    [SerializeField] Vector2 deathSeq = new Vector2(25f, 25f);
 
-    [Header("Death Settings")]
-    [SerializeField] private Vector2 deathSeq = new Vector2(25f, 25f);
-
-    private bool isAlive = true;
+    AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
 
     float gravityScaleAtStart;
+
+    bool isAlive = true;
 
     Rigidbody2D playerCharacter;
 
@@ -35,6 +32,8 @@ public class Player : MonoBehaviour
         playerBodyCollider = GetComponent<CapsuleCollider2D>();
         playerFeetCollider = GetComponent<BoxCollider2D>();
 
+        audioSource = GetComponent<AudioSource>();
+
         gravityScaleAtStart = playerCharacter.gravityScale;
     }
 
@@ -43,6 +42,7 @@ public class Player : MonoBehaviour
     {
         if (!isAlive)
         {
+            // Return halts the method
             return;
         }
 
@@ -83,18 +83,20 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             // Will stop this function unless true
             return;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump"))
         {
             // Get new Y velocity based on a variable
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
             // playerAnimator.SetBool("jump", true);
+
+            audioSource.PlayOneShot(jumpSound, 0.7f);
         }
         /* else
         {
@@ -129,11 +131,11 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
+        if (playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")))
         {
             isAlive = false;
-            playerAnimator.SetTrigger("die"); // Not yet created
-            playerCharacter.velocity = deathSeq;
+            playerAnimator.SetTrigger("die");
+            GetComponent<Rigidbody2D>().velocity = deathSeq;
 
             FindAnyObjectByType<GameSession>().ProcessPlayerDeath();
         }
