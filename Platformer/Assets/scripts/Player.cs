@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
             playerAnimator.SetTrigger("die");
             GetComponent<Rigidbody2D>().velocity = deathSeq;
 
-            FindAnyObjectByType<GameSession>().ProcessPlayerDeath();
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }

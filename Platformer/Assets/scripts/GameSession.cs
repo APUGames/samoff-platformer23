@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
+    [SerializeField] int playerScore = 0;
+
+    [SerializeField] private TextMeshProUGUI lives;
+    [SerializeField] private TextMeshProUGUI score;
 
     // Awake is the first thing that happens when the object enters the Scene
     private void Awake()
@@ -28,7 +33,8 @@ public class GameSession : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        lives.text = playerLives.ToString();
+        score.text = playerScore.ToString();
     }
 
     // Update is called once per frame
@@ -55,7 +61,7 @@ public class GameSession : MonoBehaviour
 
         Destroy(gameObject);
     }
-
+     
     private void SubtractLife()
     {
         playerLives--;
@@ -63,6 +69,14 @@ public class GameSession : MonoBehaviour
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         SceneManager.LoadScene(currentSceneIndex);
+
+        lives.text = playerLives.ToString();
+    }
+
+    public void ProcessPlayerScore (int points)
+    {
+        playerScore += points;
+        score.text = playerScore.ToString();
     }
 
 }
